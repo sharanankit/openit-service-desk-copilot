@@ -1,0 +1,25 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# macOS generated files
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Local data and experiment outputs
+data/private/
+*.log
