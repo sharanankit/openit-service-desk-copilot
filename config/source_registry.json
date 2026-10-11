@@ -1,0 +1,87 @@
+
+{
+  "policy": {
+    "official_sources_only": true,
+    "exclude_community_content": true,
+    "exclude_unofficial_tutorials": true,
+    "require_source_attribution": true,
+    "require_terms_review_before_bulk_ingestion": true
+  },
+  "sources": [
+    {
+      "id": "sap_help",
+      "vendor": "SAP",
+      "name": "SAP Help Portal",
+      "base_url": "https://help.sap.com/docs",
+      "products": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "SAP Fiori",
+        "SAP Integration Suite"
+      ],
+      "source_type": "official_documentation",
+      "ingestion_method": "curated_urls",
+      "approval_status": "pending_terms_review",
+      "enabled": false
+    },
+    {
+      "id": "sap_support",
+      "vendor": "SAP",
+      "name": "SAP Support Portal",
+      "base_url": "https://support.sap.com/en/index.html",
+      "products": [
+        "SAP enterprise products"
+      ],
+      "source_type": "official_support",
+      "ingestion_method": "manual_authorized_access",
+      "approval_status": "access_and_terms_review_required",
+      "enabled": false
+    },
+    {
+      "id": "microsoft_learn",
+      "vendor": "Microsoft",
+      "name": "Microsoft Learn",
+      "base_url": "https://learn.microsoft.com/",
+      "products": [
+        "Microsoft Azure",
+        "Microsoft 365",
+        "Windows",
+        "Microsoft Entra",
+        "Microsoft Intune"
+      ],
+      "source_type": "official_documentation",
+      "ingestion_method": "curated_urls",
+      "approval_status": "pending_terms_review",
+      "enabled": false
+    },
+    {
+      "id": "microsoft_troubleshoot",
+      "vendor": "Microsoft",
+      "name": "Microsoft Troubleshooting",
+      "base_url": "https://learn.microsoft.com/en-us/troubleshoot/",
+      "products": [
+        "Microsoft products"
+      ],
+      "source_type": "official_troubleshooting",
+      "ingestion_method": "curated_urls",
+      "approval_status": "pending_terms_review",
+      "enabled": false
+    },
+    {
+      "id": "salesforce_help",
+      "vendor": "Salesforce",
+      "name": "Salesforce Help",
+      "base_url": "https://help.salesforce.com/",
+      "products": [
+        "Sales Cloud",
+        "Service Cloud",
+        "Salesforce Platform",
+        "Marketing Cloud"
+      ],
+      "source_type": "official_documentation",
+      "ingestion_method": "curated_urls",
+      "approval_status": "pending_terms_review",
+      "enabled": false
+    }
+  ]
+}
